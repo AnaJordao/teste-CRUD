@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>CRUD Teste</title>
+    </head>
+    <body>
+        <main>
+            <label>Name: </label>
+            <input type="text" id="name-input">
+            <br>
+            <label>Country Code: </label>
+            <input type="text" id="country-input">
+            <br>
+            <label>District: </label>
+            <input type="text" id="district-input">
+            <br>
+            <label>Population: </label>
+            <input type="text" id="population-input">
+            <br>
+            <button id="add-btn">Add New</button>
+
+            <br><br><br> 
+
+            <div>
+                <input placeholder="search by name" type="text" id="search-input">
+                <button id="search-btn">Search</button>
+            </div>
+
+            <table id="table">
+                <thead>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Country Code</th>
+                    <th>District</th>
+                    <th>Population</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <section hidden id="update-row">
+                <label>Name:</label>
+                <input type="text" id="update-name-input">
+                <button id="update-row-btn">Update</button>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
